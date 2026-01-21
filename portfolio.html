@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dhrutika Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2 class="logo">Dhrutika</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+  <h1>Hello, I am Dhrutika</h1>
+  <p>Software Engineering Student & Aspiring Developer</p>
+
+  <p>
+    I build websites, frontend designs and full stack applications.
+  </p>
+
+  <button onclick="contact()">Hire Me</button>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+
+  <p>
+  Education: Diploma Vocational Software Development  
+  CGPA: 8.33 | SPI: 9.03
+  </p>
+
+  <p>
+  Skills: HTML, CSS, JavaScript, React, Node, MongoDB
+  </p>
+
+  <p>
+  Goal: To become a professional Software Engineer and build real world applications.
+  </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Amazon Cloud Project</h3>
+    <p>Deployed application on AWS cloud with storage and hosting.</p>
+    <a href="#">GitHub Link</a>
+  </div>
+
+  <div class="card">
+    <h3>College Management</h3>
+    <p>Website for student record and attendance.</p>
+    <a href="#">GitHub Link</a>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2>Services</h2>
+
+  <div class="card">
+    <h3>Website Development</h3>
+  </div>
+
+  <div class="card">
+    <h3>Frontend Design</h3>
+  </div>
+
+  <div class="card">
+    <h3>Bug Fixing</h3>
+  </div>
+
+  <div class="card">
+    <h3>Student Project Help</h3>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Me</h2>
+
+  <input id="name" placeholder="Your Name"><br>
+  <input id="email" placeholder="Email"><br>
+  <textarea id="msg" placeholder="Message"></textarea><br>
+
+  <button onclick="send()">Send</button>
+
+  <p>
+    LinkedIn: your-link  
+    GitHub: your-github
+  </p>
+</section>
+
+<script src="script.js"></script>
+
+body{
+  font-family: Arial;
+  margin:0;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  background:black;
+  color:white;
+  padding:15px;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+}
+
+nav ul li{
+  margin:0 10px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+}
+
+section{
+  padding:40px;
+  text-align:center;
+}
+
+.card{
+  border:1px solid gray;
+  margin:10px;
+  padding:10px;
+}
+
+button{
+  padding:10px;
+  background:black;
+  color:white;
+}
+function contact(){
+  document.getElementById("contact").scrollIntoView();
+}
+
+function send(){
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+
+  alert("Thank you " + name + "! I will contact you on " + email);
+}
+</body>
+</html

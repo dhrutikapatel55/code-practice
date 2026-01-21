@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProDev Team Portfolio</title>
+<style>
+body{background:#0f172a;color:#e2e8f0;font-family:Segoe UI;margin:0}
+header{background:#020617;padding:40px;text-align:center}
+nav a{color:#94a3b8;margin:0 12px;text-decoration:none}
+section{padding:60px 10%}
+.title{color:#38bdf8;font-size:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#111827;padding:14px;border-radius:12px}
+img{width:100%;border-radius:10px}
+.btn{background:#38bdf8;padding:10px 20px;border:none;border-radius:8px}
+footer{text-align:center;padding:20px;background:#020617}
+input,textarea{width:100%;margin:6px 0;padding:8px;background:#0b1220;color:white;border:1px solid #1e293b}
+</style>
+</head>
+<body>
+<header>
+<h1>ProDev – Software Team</h1>
+<p>Commercial Portfolio for Final Year Students</p>
+<nav>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section id="about">
+<h2 class="title">About Us</h2>
+<p>Young developers creating real world commercial web solutions using HTML, CSS, JavaScript and Cloud.</p>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475"><h3>Development</h3></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" alt="Teamwork"><h3>Team Work</h3></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2"><h3>UI Design</h3></div>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="title">Projects</h2>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0"><h4>Amazon Cloud Project</h4><p>AWS based deployment and storage.</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb"><h4>E-Commerce</h4><p>Shopping website with JS.</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935"><h4>Dashboard</h4><p>Admin analytics panel.</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"><h4>Student Portal</h4><p>College helper system.</p></div>
+</div>
+</section>
+
+<section id="services">
+<h2 class="title">Services</h2>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"><h3>Website Dev</h3></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1505685296765-3a2736de412f"><h3>Frontend</h3></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&w=1600&q=80"><<h3>Bug Fix</h3></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c"><h3>Student Help</h3></div>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="title">Contact</h2>
+<form onsubmit="send(event)">
+<input placeholder="Name" required>
+<input placeholder="Email" required>
+<textarea placeholder="Message"></textarea>
+<button class="btn">Send</button>
+</form>
+</section>
+
+<footer>© 2026 ProDev Team</footer>
+
+<script>
+function send(e){e.preventDefault();alert('Message Sent');e.target.reset();}
+</script>
+</body>
+</html>
